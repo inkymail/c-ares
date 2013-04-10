@@ -588,13 +588,13 @@ static int get_DNS_iOS(char **outptr)
 		**outptr = 0;
 	}
 	for (i = 0; i < resolver_state->nscount; i++) {
-	    const char *ip = inet_ntoa(resolve_start->nsaddr_list[i].sin_addr);
+	    const char *ip = inet_ntoa(resolver_state->nsaddr_list[i].sin_addr);
 	    if (ip) {
 		if (pass == 0)
 		    len += strlen(ip) + (i ? 1 : 0);
 		else {
 		    if (i)
-			strcat(*output, ",");
+			strcat(*outptr, ",");
 		    strcat(*outptr, ip);
 		}
 	    }
