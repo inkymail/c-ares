@@ -1,11 +1,15 @@
-c-ares version 1.9.1
+c-ares version 1.10.1
 
-Fixed:
+Changes:
 
- o include the ares_parse_soa_reply.* files in the tarball
+ o 
+
+Bug fixes:
+
+ o 
  
 Thanks go to these friendly people for their efforts and contributions:
 
- Eugeny Gladkih
+  
 
 Have fun!
